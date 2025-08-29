@@ -1,6 +1,7 @@
 name: '문제'
 description: '오늘 풀 문제 정리'
 title: '[날짜] [알고리즘] 문제 풀이'
+labels: ['문제 풀이']
 body:
     - type: dropdown
       attributes:
