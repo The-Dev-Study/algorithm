@@ -1,0 +1,69 @@
+name: '문제'
+description: '오늘 풀 문제 정리'
+title: '[날짜] [알고리즘] 문제 풀이'
+body:
+    - type: dropdown
+      attributes:
+          label: 알고리즘 분류
+          description: 어떤 알고리즘 주제인가요?
+          options:
+              - 배열
+              - 연결 리스트
+              - 스택
+              - 큐
+              - 덱
+              - 스택의 활용
+              - BFS
+              - DFS
+              - 재귀
+              - 백트래킹
+              - 시뮬레이션
+              - 정렬 1
+              - 정렬 2
+              - 다이나믹 프로그래밍
+              - 그리디
+              - 수학
+              - 이분탐색
+              - 투 포인터
+              - 해시
+              - 이진 검색 트리
+              - 우선순위 큐
+              - 그래프
+              - 트리
+              - 위상 정렬
+              - 최소 신장 트리
+              - 플로이드 알고리즘
+              - 다익스트라 알고리즘
+              - KMP
+              - 트라이
+              - 문자열 기초
+              - 동적 배열
+              - 비트마스킹
+              - Union-Find
+              - 다이나믹 프로그래밍 심화
+      validations:
+          required: true
+
+    - type: dropdown
+      attributes:
+          label: 학습 단계
+          description: 몇 번째 날인가요?
+          options:
+              - Day1 (기본, 연습)
+              - Day2 (기본, 응용)
+              - Day3 (연습, 응용)
+      validations:
+          required: true
+    - type: textarea
+      attributes:
+          label: 문제 링크
+          description: |
+              위에서 입력한 번호를 기반으로 링크를 생성해주세요.
+          placeholder: |
+              문제 1: https://www.acmicpc.net/problem/[문제번호1]
+              문제 2: https://www.acmicpc.net/problem/[문제번호2]
+          value: |
+              문제 1: https://www.acmicpc.net/problem/
+              문제 2: https://www.acmicpc.net/problem/
+      validations:
+          required: true
