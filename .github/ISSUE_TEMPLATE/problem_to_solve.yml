@@ -4,9 +4,10 @@ title: '[날짜] [알고리즘] 문제 풀이'
 labels: ['문제 풀이']
 body:
     - type: dropdown
+      id: algorithm
       attributes:
-          label: 알고리즘 분류
-          description: 어떤 알고리즘 주제인가요?
+          label: '알고리즘 분류'
+          description: '어떤 알고리즘 주제인가요?'
           options:
               - 배열
               - 연결 리스트
@@ -46,20 +47,22 @@ body:
           required: true
 
     - type: dropdown
+      id: stage
       attributes:
-          label: 학습 단계
-          description: 몇 번째 날인가요?
+          label: '학습 단계'
+          description: '몇 번째 날인가요?'
           options:
               - Day1 (기본, 연습)
               - Day2 (기본, 응용)
               - Day3 (연습, 응용)
       validations:
           required: true
+
     - type: textarea
+      id: link
       attributes:
-          label: 문제 링크
-          description: |
-              위에서 입력한 번호를 기반으로 링크를 생성해주세요.
+          label: '문제 링크'
+          description: '위에서 입력한 번호를 기반으로 링크를 생성해주세요.'
           placeholder: |
               문제 1: https://www.acmicpc.net/problem/[문제번호1]
               문제 2: https://www.acmicpc.net/problem/[문제번호2]
